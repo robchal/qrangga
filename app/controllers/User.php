@@ -2,7 +2,7 @@
 
 class User extends Controller{
     public function index() {
-        if( isset($_SESSION['password'])) {
+        if( isset($_SESSION['password']) ) {
             header('Location:' . URLROOT . '/pages/index');
         } else {
             header('Location:' . URLROOT . '/user/login');

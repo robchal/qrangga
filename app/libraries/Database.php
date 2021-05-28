@@ -32,7 +32,7 @@ class Database {
 
     //bind query
     public function bind($param, $value, $type = null) {
-        switch( is_null($type)) {
+        switch( is_null($type) ) {
             case is_int($value):
                 $type = PDO::PARAM_INT;
                 break;

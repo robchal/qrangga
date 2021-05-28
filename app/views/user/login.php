@@ -2,7 +2,8 @@
     <div class="form-container">
         <h1>Qrangga</h1>
         <h4>Silakan masukkan e-mail dan password untuk masuk.</h4>
-<?php var_dump($_SESSION); ?>
+
+        
             <form action="<?= URLROOT ?>/user/login" method='post'>
 
                 <div class="input-auth">

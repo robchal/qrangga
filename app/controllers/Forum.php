@@ -3,7 +3,7 @@
 class Forum extends Controller{
     private $room_id;
 
-    public function index($data = [], $status = []) {
+    public function index($data = []) {
         if( empty($data) ) {
             $data_chat = $this->model('Forum_model')->getChat(1);
             $this->room_id = $this->model('Forum_model')->getUserAndIdRoom(1);

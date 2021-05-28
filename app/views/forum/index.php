@@ -5,7 +5,6 @@
         <img class='arrow-img' src="<?= URLROOT ?>/public/assets/arrow-icon.svg" alt="">
     </div>
         <ul class='room-name'>
-            
             <div class="btn-addRoom">
                 <h4>Buat room</h4>
                 <img src="<?= URLROOT ?>/public/assets/add-icon.svg" alt="">
@@ -39,7 +38,7 @@
         <form action="<?= URLROOT ?>/forum/addChat" method='post' enctype="multipart/form-data">
             <div class="chat-inp">
             <div class="inp-field">
-            <input type="hidden" name="id_room" value="<?= $roomDetail['id_room'] ?>">
+                <input type="hidden" name="id_room" value="<?= $roomDetail['id_room'] ?>">
                 <input type="hidden" name="chat_sender" value="<?= $_SESSION['username']?>">
                 <textarea name="chat-content" id="chat-content" cols="30" rows="10"></textarea>
                 <input class="file-input" type="file" name="gambar" id="">   
@@ -93,18 +92,18 @@
     </div>
     
     <div class="make-room">
-    <div class="buat-close">
-    <p class='close-icon'>X</p>
-    <p class='room-desc'>You can make your own chat room here</p>
-        <div class="form-addRoom">
-            <form action="<?= URLROOT ?>/forum/addRoom" method='post'>
-                <input type="hidden" name="id_room">
-                <input type="text" name="judul_room" id="judul_room" placeholder='masukan nama room'>
-                <input type="hidden" name="room_maker" value="<?= $_SESSION['username']?>">
-                <button type='submit' name='buat-room'>Buat Room</button>
-            </form>
+        <div class="buat-close">
+        <p class='close-icon'>X</p>
+        <p class='room-desc'>You can make your own chat room here</p>
+            <div class="form-addRoom">
+                <form action="<?= URLROOT ?>/forum/addRoom" method='post'>
+                    <input type="hidden" name="id_room">
+                    <input type="text" name="judul_room" id="judul_room" placeholder='masukan nama room'>
+                    <input type="hidden" name="room_maker" value="<?= $_SESSION['username']?>">
+                    <button type='submit' name='buat-room'>Buat Room</button>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
 
 </div>

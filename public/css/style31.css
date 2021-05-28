@@ -242,8 +242,7 @@ ul {
 /* chat forum styling */
 .forum-manager {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 30px 0px;
 }
 
 .chat-list {
@@ -273,7 +272,6 @@ ul {
   padding: 7px;
   display: flex;
   align-items: center;
-  margin-top: 15px;
   justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -299,7 +297,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .chat-icon {
@@ -314,6 +312,7 @@ button {
   color: #6a6d72;
   word-wrap: break-word;
   max-width: 120px;
+  margin-top: 5px;
 }
 
 .room-name li {
@@ -550,7 +549,7 @@ button.dlt-btn {
 
 .make-room {
   position: absolute;
-  left: 15%;
+  left: 20%;
   transform: translateY(-150%);
 }
 
@@ -643,6 +642,48 @@ button.dlt-btn {
   height: 0px;
 }
 
+/* gallery styling */
+.gallery-manager {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+}
+
+.gallery-body {
+  margin-left: 30px;
+  width: 90%;
+}
+
+.inp-gambar {
+  display: flex;
+  margin-left: 80px;
+}
+
+.inp-gambar button {
+  width: 130px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.list-gambar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 15px;
+  margin: 20px 10px;
+  margin-right: 15px;
+  padding: 10px 15px;
+}
+
+.list-gambar img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  box-shadow: 0px 0px 5px #444;
+  padding: 2px;
+}
+
 /* responsive view mobie  */
 
 @media screen and (max-width: 600px) {
@@ -692,11 +733,11 @@ button.dlt-btn {
 
   /* forum styling */
   .chat-list {
-    width: 150px;
-    max-width: 150px;
+    max-width: 160px;
     transition: 1s;
     position: absolute;
     transform: translateX(-85%);
+    box-shadow: none;
   }
   /* arrow slide */
   .arrow-slide {
@@ -754,7 +795,6 @@ button.dlt-btn {
 
   /* chat room styling  */
   .chat-room {
-    width: 90%;
     margin-left: 20px;
     transition: 1s;
     box-sizing: border-box;
@@ -797,11 +837,10 @@ button.dlt-btn {
     max-width: 40%;
     min-width: 100px;
     padding: 5px;
-    border-radius: 20px;
     opacity: 0.8;
     margin-bottom: 10px;
+    border-radius: 10px;
     border-top-left-radius: 0px;
-    border-bottom-left-radius: 5px;
     box-shadow: 1px 2px 0px #515357;
     word-wrap: break-word;
     height: fit-content;
@@ -1016,5 +1055,13 @@ button.dlt-btn {
   .delete-roomBtn button a {
     font-size: 10px;
     color: #ffff;
+  }
+
+  .list-gambar img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px #444;
+    padding: 4px;
   }
 }

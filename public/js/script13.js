@@ -19,7 +19,6 @@ if( navul ) {
 //addRoom toggle 
 const makeRoom = document.querySelector('.make-room');
 
-
 if( makeRoom) {
     
     const btnAddRoom = document.querySelector('.btn-addRoom');
